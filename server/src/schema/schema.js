@@ -1,6 +1,6 @@
-import { gql } from 'graphql'
+import { gql } from 'apollo-server'
 
-export const typeDefs = gql`
+const typeDefs = gql`
   type Query {
     "Query to get the list of trackList for home screen"
     tracksForHome: [Track!]!
@@ -30,3 +30,5 @@ export const typeDefs = gql`
     photo: String
   }
 `
+
+export default typeDefs
