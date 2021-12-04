@@ -1,5 +1,5 @@
-const { ApolloServer } = require('apollo-server');
-const typeDefs = require('./schema');
+import  {ApolloServer} from 'apollo-server'
+import {typeDefs} from './schema.js';
 
 const mocks = {
   Query: () => ({
